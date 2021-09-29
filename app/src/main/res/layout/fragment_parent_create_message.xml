@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="@dimen/page_padding"
+              tools:context="onedaywiser.ParentMessageThreadFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message Topic"
+            android:id="@+id/messageTopicLabel"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textcolorDark"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/parent_message_topic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input"
+            android:gravity="top"
+            android:padding="5dp"
+            android:layout_marginBottom="25dp"
+            android:inputType="text"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child Concerning"
+            android:id="@+id/messageChildLabel"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textcolorDark"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/child_concerning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Child's School Class"
+            android:id="@+id/messageChildSchoolClassLabel"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textcolorDark"
+            android:textSize="18sp"/>
+
+        <Spinner
+            android:id="@+id/child_school_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Content"
+            android:id="@+id/messageContentLabel"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/textcolorDark"
+            android:textSize="18sp"/>
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:background="@drawable/input"
+            android:layout_height="200dp"
+            android:gravity="top"
+            android:padding="5dp"
+            android:layout_marginBottom="25dp"
+            android:hint="Enter message text..."
+            android:inputType="text|textMultiLine"/>
+
+        <Button
+            android:id="@+id/create_message_thread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_button"
+            android:text="Create Message Thread"
+            android:textSize="@dimen/font_size_heading"
+            android:textColor="@color/textLight"/>
+    </LinearLayout>
+
+</LinearLayout>

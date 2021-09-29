@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="@dimen/page_padding"
+              tools:context=".DashboardFragment">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/welcome_message"
+        android:textSize="@dimen/font_size_heading"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:weightSum="1.0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/font_size_regular"
+            android:text="Trophies:"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_weight=".5"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/dashboard_trophies_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:weightSum="1.0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/font_size_regular"
+            android:text="Exercises Completed:"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_weight=".5"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/dashboard_exercises_completed_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="30dp"
+    android:weightSum="1.0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/font_size_regular"
+            android:text="Participation Points:"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_weight=".5"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/dashboard_participation_points_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:weightSum="1.0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/font_size_regular"
+            android:text="Achievement Points:"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_weight=".5"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/dashboard_achievement_points_count"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30dp"
+        android:weightSum="1.0">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:textSize="@dimen/font_size_regular"
+            android:text="Group Name:"/>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_regular"
+            android:layout_weight=".5"
+            android:text="0"
+            android:gravity="center"
+            android:id="@+id/dashboard_group_name"/>
+    </LinearLayout>
+
+</LinearLayout>

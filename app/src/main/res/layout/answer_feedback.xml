@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/toast_layout_root"
+              android:orientation="horizontal"
+              android:layout_width="500dp"
+              android:layout_height="200dp"
+              android:padding="15dp"
+              android:background="@color/colorPrimary" >
+
+    <ImageView android:id="@+id/feedback_image"
+               android:layout_width="150dp"
+               android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center">
+
+        <TextView android:id="@+id/feedback_heading"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/textAlternateDark"
+                  android:textSize="@dimen/font_size_toast_heading"/>
+
+        <TextView android:id="@+id/feedback_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/textAlternateDark"
+                  android:textSize="@dimen/font_size_toast_text"/>
+
+        <TextView android:id="@+id/feedback_achievement_points"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/textAlternateDark"
+                  android:textSize="@dimen/font_size_toast_text"/>
+
+    </LinearLayout>
+
+</LinearLayout>

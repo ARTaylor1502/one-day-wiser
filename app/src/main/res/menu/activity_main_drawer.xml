@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard"/>
+        <item
+            android:id="@+id/nav_lessons"
+            android:icon="@drawable/ic_lessons"
+            android:title="@string/lessons"/>
+        <item
+            android:id="@+id/nav_group_leaderboard"
+            android:icon="@drawable/ic_leaderboard"
+            android:title="@string/group_leaderboard"/>
+        <item
+            android:id="@+id/nav_trophies"
+            android:icon="@drawable/ic_trophy"
+            android:title="@string/trophies"/>
+        <item
+            android:id="@+id/nav_aquarium"
+            android:icon="@drawable/ic_aquarium"
+            android:title="@string/aquarium"/>
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@drawable/ic_shop"
+            android:title="@string/aquatics_shop"/>
+    </group>
+
+</menu>

@@ -1,0 +1,36 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:padding="@dimen/page_padding"
+             tools:context="onedaywiser.GroupFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_heading"
+            android:layout_marginBottom="30dp"
+            android:text="Group Leaderboard"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/group_leaderboard_chart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <Button
+            android:id="@+id/navigate_to_user_contribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/primary_button"
+            android:text="Go to My Contribution"
+            android:textSize="@dimen/font_size_heading"
+            android:textColor="@color/textLight"/>
+    </LinearLayout>
+
+</FrameLayout>

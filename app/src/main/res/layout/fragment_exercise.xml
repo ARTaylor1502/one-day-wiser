@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="onedaywiser.ExerciseFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/page_padding">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/exercise_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/page_heading_font_size"/>
+
+                <WebView
+                    android:id="@+id/exercise_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30sp"
+                    android:layout_marginTop="30sp">
+                </WebView>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="25sp">
+
+            <EditText
+                android:id="@+id/exercise_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter answer here"
+                android:layout_marginBottom="15dp"/>
+
+            <Button
+                android:id="@+id/submit_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/primary_button"
+                android:text="Submit Answer"
+                android:textColor="@color/textLight"
+                android:textSize="@dimen/font_size_heading"
+                tools:text="Submit Answer"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

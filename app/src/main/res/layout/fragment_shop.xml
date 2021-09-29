@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" android:orientation="vertical"
+             android:padding="@dimen/page_padding"
+             tools:context="onedaywiser.ShopFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="25sp"
+        android:src="@drawable/aquatics_shop"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_heading"
+                android:text="Fish"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/fish_items">
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_size_heading"
+                android:text="Bottom of tank items"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="horizontal"
+                    android:id="@+id/bottom_shop_items">
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/secondary_button"
+        android:padding="15dp"
+        android:layout_marginTop="25sp">
+
+        <TextView
+            android:id="@+id/available_points_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:text="Available Points:"
+            android:textColor="@color/textAlternateDark"
+            android:layout_weight=".6"
+            android:textSize="@dimen/font_size_heading"/>
+        <TextView
+            android:id="@+id/available_points"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/alternate_button"
+            android:textColor="@color/textAlternateDark"
+            android:text="0"
+            android:layout_weight=".4"
+            android:textSize="@dimen/font_size_heading"/>
+    </LinearLayout>
+</LinearLayout>
